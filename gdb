@@ -38,6 +38,7 @@ watch foo -- stop when foo is modified
 watch -l foo -- watch location
 rwatch foo  -- stop when foo is read
 watch foo thread 3  -- stop when thread 3 modifies foo
+
 watch foo if foo > 10 stop when foo is > 10
 
 thead apply:
@@ -55,3 +56,19 @@ dprintf mutex_lock, "m is %p m->magic is %u\n",m,m->magic
 set dprintf-style gdb|call |agent
 set dprintf-function fprintf
 set dprintf-channel mylog
+
+calling inferior functions
+--------------------------
+call foo() -- call foo() function in our inferior
+
+print foo()
+print foo + bar
+print errno
+-- below will call strcpy and malloc
+call strcpy(buffer, "hello, world!\n")
+
+catch points:
+--------------
+catch catch to stop when c+ excetipons are caught
+catch syscall nanosleep -- to stop at nanosleep sys call
+catch syscall 100 -- to stop at system call number 100
