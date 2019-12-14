@@ -72,3 +72,29 @@ catch points:
 catch catch to stop when c+ excetipons are caught
 catch syscall nanosleep -- to stop at nanosleep sys call
 catch syscall 100 -- to stop at system call number 100
+
+Multiprocess debugging:
+----------------------
+set follow-fork-mode child|parent
+set detach-on-fork off
+info inferiors
+inferior N
+set follow-exec-mode new|same
+add-inferior <count> <name>
+remove-inferior N
+clone-inferior
+print $_inferior
+
+misc
+--------
+tbreak -- temporary breakpoint
+rbreak -- reex breakpoint - break on all funcion of a library
+command -- list of commands to be exected when breakpoint is hit
+silent -- special command to suppres output on breakpoint hit
+save breakpoints -- save list of breakpoints to a script
+save history -- save gdb command history
+info line foo.c:42 show PC for line
+info line * $pc -- show line begin/end for current program counter
+gcc's -g and -O are orthogonal , gcc -Og is optimized but does not mess up debug
+-ggdb3 is better than -g
+
