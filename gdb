@@ -98,4 +98,6 @@ info line foo.c:42 show PC for line
 info line * $pc -- show line begin/end for current program counter
 gcc's -g and -O are orthogonal , gcc -Og is optimized but does not mess up debug
 -ggdb3 is better than -g
+info locals
+info args
 
