@@ -9,6 +9,7 @@ key: 'ctrl + l' = refresh the screen
 key: 'ctrl + p' , 'ctrl + n' : prev and next commands
 key: 'ctrl + x + 2' 2nd window, cycle through - assembly
 key: 'ctrl + x + 1' 1st window
+ptype var # gives type of variable , its useful to know auto type
 python:
 -------
 gdb> python
