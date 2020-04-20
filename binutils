@@ -1,0 +1,2 @@
+Dump source file info from elf file:
+  readelf -wi /home/user/build/myfile.so.1 | grep -B1 DW_AT_comp_dir |     awk '/DW_AT_name/{name = $NF; getline; print $NF"/"name}'
