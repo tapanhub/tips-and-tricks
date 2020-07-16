@@ -101,3 +101,8 @@ gcc's -g and -O are orthogonal , gcc -Og is optimized but does not mess up debug
 info locals
 info args
 
+Regex breakpoints(rbreak)
+-------------------------
+
+(gdb)set stop-on-solib-events 1
+(gdb)rbreak file.c:.
