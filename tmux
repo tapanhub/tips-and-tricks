@@ -7,3 +7,7 @@ Copy paste in tmux:
     Ctrl+b, ] = "Paste copied text from tmux clipboard."
 
   Ctrl+b,?  = "for the full list of set keyboard shortcuts."
+  
+switch b/w sessions:
+--------------------
+   Ctrl + b, s => select tmux sessions from available ones
