@@ -1,0 +1,4 @@
+- How to create separate debug info file
+ 
+objcopy --only-keep-debug foo foo.debug
+strip -g foo
