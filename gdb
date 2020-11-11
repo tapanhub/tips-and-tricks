@@ -106,3 +106,7 @@ Regex breakpoints(rbreak)
 
 (gdb)set stop-on-solib-events 1
 (gdb)rbreak file.c:.
+
+print std::vec in c++
+----------------------
+print *(myVector._M_impl._M_start)@myVector.size()
