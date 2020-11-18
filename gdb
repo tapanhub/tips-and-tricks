@@ -110,3 +110,9 @@ Regex breakpoints(rbreak)
 print std::vec in c++
 ----------------------
 print *(myVector._M_impl._M_start)@myVector.size()
+
+
+coredump print envs
+-------------------
+(gdb) print (char ***) &environ
+(gdb) print $1[0][0]@100
