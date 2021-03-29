@@ -1,6 +1,8 @@
 ps aux --forest
 
+Thread count:
 ps -o thcount <pid>
+cat /proc/6220/status  | grep Threads
 
 ==process state==
 
