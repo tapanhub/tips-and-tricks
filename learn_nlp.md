@@ -114,3 +114,26 @@ Website: https://fasttext.cc/
 These libraries and frameworks provide a wide range of tools and functionalities that can help you implement, train, and evaluate NLP models for various tasks and applications.
 
 
+**Hugging Face Transformers** is a popular library that provides a unified and easy-to-use interface for transformer-based models. While the library itself is not an architecture, it does support various state-of-the-art architectures like BERT, GPT, RoBERTa, and T5. Each of these architectures has its unique features, but they all share a common foundation: the Transformer.
+
+The Transformer was introduced in the paper "Attention is All You Need" by Vaswani et al. (2017). It consists of an encoder and a decoder, both of which are composed of stacked layers containing self-attention mechanisms and feedforward networks. We'll discuss the key components of the Transformer architecture below:
+
+**Self-Attention Mechanism:**
+The self-attention mechanism calculates the importance of each word in a sequence relative to every other word. This is done using three weight matrices (query, key, and value) that are derived from the input embeddings. The self-attention mechanism computes a weighted sum of the value vectors using the dot product between the query and key vectors, followed by a softmax activation.
+
+**Multi-Head Attention:**
+Multi-head attention is an extension of the self-attention mechanism. It divides the input embeddings into multiple "heads" and applies self-attention to each head independently. The outputs from all heads are then concatenated and passed through a linear layer. This allows the model to capture different types of relationships between words in a sequence.
+
+**Position-wise Feedforward Networks (FFN):**
+These are fully connected feedforward networks applied independently to each position in the input sequence. They consist of two linear layers with a ReLU activation in between.
+
+**Positional Encoding:**
+Transformers do not have any inherent notion of word order. To capture positional information, a positional encoding is added to the input word embeddings. This encoding consists of a combination of sine and cosine functions with varying frequencies, allowing the model to learn and use positional information.
+
+**Layer Normalization and Residual Connections:**
+Each sub-layer within the Transformer, such as the self-attention mechanism or the FFN, is wrapped with a residual connection followed by layer normalization. This helps improve training stability and convergence.
+
+**Encoder and Decoder Stacks:**
+The Transformer architecture consists of an encoder stack and a decoder stack, each containing multiple layers. The encoder processes the input sequence, while the decoder generates the output sequence. In some models like BERT and RoBERTa, only the encoder stack is used, while models like GPT and T5 use a modified decoder stack for tasks like language modeling and text generation.
+
+Hugging Face Transformers library abstracts these architectures and components, making it easy to implement, fine-tune, and deploy state-of-the-art transformer-based models. The library also provides pre-trained models and tokenizers, allowing you to start experimenting with minimal effort.
