@@ -47,3 +47,35 @@ Part-of-Speech (POS) Tagging: POS tagging is the process of assigning a part-of-
 Named Entity Recognition (NER): NER is a task that involves identifying and classifying named entities (e.g., people, organizations, locations) within a text. This information can be useful for tasks such as information extraction, text summarization, or question-answering systems.
 
 Sentiment Analysis: Sentiment analysis, also known as opinion mining, aims to determine the sentiment or emotion expressed in a text, such as positive, negative, or neutral. This can be useful for analyzing customer reviews, social media posts, or any text where understanding the sentiment is important
+
+**Understanding key NLP techniques** involves diving deeper into the methods and algorithms used for processing and analyzing natural language data. Here are some important techniques to explore:
+
+**Rule-based methods:**
+These techniques involve defining a set of handcrafted rules or patterns to perform various NLP tasks. Regular expressions, context-free grammars, and finite-state automata are examples of rule-based methods. While these methods can be effective for specific, well-defined problems, they may struggle to scale or generalize to more complex tasks.
+
+**Statistical methods:**
+Statistical NLP techniques use probability and statistics to model language. These methods analyze the frequency and co-occurrence of words or phrases in large corpora to make predictions or decisions. Examples of statistical methods include n-gram language models, hidden Markov models (HMMs), and naive Bayes classifiers.
+
+**Machine learning:**
+Machine learning-based NLP techniques employ algorithms that can learn patterns and make predictions based on training data. Supervised, unsupervised, and reinforcement learning algorithms can be used for various NLP tasks such as text classification, clustering, and sequence labeling. Examples include support vector machines (SVMs), decision trees, and k-means clustering.
+
+**Deep learning:**
+Deep learning is a subfield of machine learning that focuses on neural networks with many layers. These models can learn complex patterns and representations from large amounts of data. Some key deep learning techniques used in NLP include:
+
+**a.** Feedforward Neural Networks: These are the simplest type of neural networks, with connections only in the forward direction. They can be used for tasks like text classification or regression.
+
+**b.** Recurrent Neural Networks (RNNs): RNNs are a type of neural network with connections that loop back, allowing them to model sequential data. They can be used for tasks like language modeling, sentiment analysis, and machine translation.
+
+**c.** Long Short-Term Memory (LSTM) Networks: LSTMs are a type of RNN specifically designed to address the vanishing gradient problem, which makes it difficult for standard RNNs to learn long-range dependencies. LSTMs are widely used in tasks involving sequences, such as text generation or speech recognition.
+
+**d.** Convolutional Neural Networks (CNNs): Although CNNs were initially developed for image processing, they can also be applied to NLP tasks, especially for tasks that require local feature detection, such as text classification or named entity recognition.
+
+**e.** Attention Mechanisms: Attention mechanisms help models selectively focus on specific parts of the input data, improving the performance of tasks like machine translation and summarization.
+
+Transfer learning and pre-trained models:
+Transfer learning involves using pre-trained models, often trained on large-scale language modeling tasks, as a starting point for training NLP models on specific tasks. Techniques like BERT, GPT, and RoBERTa use this approach, leading to significant improvements in performance across a wide range of NLP tasks.
+
+
+
+
+
