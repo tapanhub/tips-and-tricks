@@ -11,3 +11,7 @@
   ```
   kubectl get events -n default
   ```
+  *Get cpuset info inside container*
+  ```
+  cat /sys/fs/cgroup/cpuset/cpuset.cpus
+  ```
