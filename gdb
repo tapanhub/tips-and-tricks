@@ -116,3 +116,8 @@ coredump print envs
 -------------------
 (gdb) print (char ***) &environ
 (gdb) print $1[0][0]@100
+
+python debuggin
+----------------
+sudo apt-get install gdb python3.8-dbg vim
+gdb -ex run --args python your_script.py arg1 arg2
