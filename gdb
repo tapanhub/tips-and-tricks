@@ -121,3 +121,10 @@ python debuggin
 ----------------
 sudo apt-get install gdb python3.8-dbg vim
 gdb -ex run --args python your_script.py arg1 arg2
+
+# Define your program and its arguments
+PROGRAM="./your_program"
+ARGS="arg1 arg2"
+
+# Run the program under GDB in batch mode with automatic backtrace on fault
+gdb --batch --ex "run $ARGS" --ex "bt" --ex "quit" $PROGRAM
